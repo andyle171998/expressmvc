@@ -1,0 +1,15 @@
+.error-content{
+    background-color: rgba(219, 68, 55, 0.15);
+    padding: 9px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+.error-content .error-box{
+    color: rgb(224, 32, 32);
+    font-family: 'cloudregular'!important;
+    font-size: 15px;
+}
+.error-content .error-box svg{
+    position: relative;
+    top: 2px;
+}

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'cloudregular';
+    src: url('./cloud-regular-webfont.eot');
+    src: url('./cloud-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./cloud-regular-webfont.woff2') format('woff2'),
+         url('./cloud-regular-webfont.woff') format('woff'),
+         url('./cloud-regular-webfont.ttf') format('truetype'),
+         url('./cloud-regular-webfont.svg#cloudregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cloudsemibold';
+    src: url('./cloud-semibold-webfont.eot');
+    src: url('./cloud-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./cloud-semibold-webfont.woff2') format('woff2'),
+         url('./cloud-semibold-webfont.woff') format('woff'),
+         url('./cloud-semibold-webfont.ttf') format('truetype'),
+         url('./cloud-semibold-webfont.svg#cloudsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,body,h1,h2,h3,h4,h5,h6,.horoscope h1{
+    font-family: 'cloudsemibold'  !important;
+}
+
+.h-section {
+    color:#00b400;
+}
+.lottery .h-section::before, .lottery .h-section::after,.horoscope h1.h-section::before, .horoscope h1.h-section::after,h1.h-section::before, h1.h-section::after{
+    border-top: 1px solid #00b400;
+}
+
+div,.navbar, .horoscope h2, .horoscope h3, .horoscope h4,.horoscope .horo-week .nav-item{
+    font-family: 'cloudsemibold'  !important;
+}
+.lottery .content-lottery .card-text{
+    font-family: 'cloudregular' !important; font-size:18px;
+}
+.dropdown-submenu a{
+    font-family: 'cloudregular'  !important;
+}
+
+.horo-week .nav-item .active{
+    background:#000;
+}
+
+.horoscope .pano h3{
+    font-size:16px; font-family: 'cloudregular' ;
+}

@@ -1,0 +1,53 @@
+{
+    "login": {
+        "login": "เข้าสู่ระบบ",
+        "subTitle": "เข้าสู่ระบบเพื่อเริ่มใช้งานซื้อ - ขายออนไลน์",
+        "loginWithFacebook": "เข้าสู่ระบบด้วย Facebook",
+        "loginWithGmail": "เข้าสู่ระบบด้วย Gmail",
+        "loginWithEmail": "เข้าสู่ระบบด้วยอีเมล",
+        "becomeAMember": "สมัครสมาชิก"
+    },
+    "register": {
+        "becomeAMember": "สมัครสมาชิก",
+        "subTitle": "คุณสามารถเป็นสมาชิก เพื่อร่วมซื้อ-ขายได้ง่ายๆ เพียงไม่กี่ขั้นตอน",
+        "registerWithFacebook": "สมัครสมาชิกด้วย Facebook",
+        "registerWithGmail": "สมัครสมาชิกด้วย Gmail",
+        "registerWithEmail": "สมัครสมาชิกด้วยอีเมล์",
+        "termsOfUseAndPrivacyPolicy": "หากคุณสมัครสมาชิกแสดงว่าคุณได้ยอมรับ<a href='#'>ข้อกำหนดการใช้งาน</a>และ<a href='#'>นโยบายความเป็นส่วนตัว</a>ของเรา",
+        "yourAccountHasBeenVerified": "บัญชีของคุณได้รับการยืนยันแล้ว คุณสามารถลงชื่อเข้าใช้ได้ทันที",
+        "yourVerificationCodeHasExpired": "รหัสยืนยันของคุณหมดอายุ กรุณา<a href='' data-toggle='modal' data-target='#resend-email'>ขอรหัสยืนยันใหม่อีกครั้ง</a>",
+        "thisRequestIsInvalid": "ขออภัยคำขอนี้ไม่ถูกต้อง โปรด<a href='' data-toggle='modal' data-target='#resend-email'>ขออีเมลยืนยันใหม่อีกครั้ง</a>"
+    },
+    "resetPassword": {
+        "resetPassword": "ลืมรหัสผ่าน",
+        "resetPasswordTitle": "กรุณากรออกอีเมลที่ใช้สมัครเพื่่อรีเซ็ตรหัสผ่าน",
+        "changePassword": "เปลี่ยนแปลงรหัสผ่าน",
+        "messgeSendEmailSuccess": "เราได้ทำการรีเซ็ตรหัสผ่านไปที่อีเมล {{email}}",
+        "pleaseCheckYourEmail": "กรุณาตรวจสอบอีเมลของคุณ",
+        "yourResetPasswordCodeHasExpired": "รหัสผ่านรีเซ็ตรหัสผ่านของคุณหมดอายุแล้ว กรุณา<a href='' data-toggle='modal' data-target='#reset-password'>ขอรหัสผ่านใหม่อีกครั้ง</a>",
+        "thisRequestIsInvalid": "ขออภัยคำขอนี้ไม่ถูกต้อง กรุณา<a href='' data-toggle='modal' data-target='#reset-password'>ส่งคำขอเปลี่ยนรหัสผ่านของคุณอีกครั้ง</a>"
+    },
+    "error": {
+        "pleaseTryAgainLater": "ระบบขัดข้องอยู่ กรุณาลองใหม่ภายหลัง",
+        "domainNotAllowed": "คุณไม่ได้รับอนุญาตให้เข้าสู่ระบบโปรดติดต่อ",
+        "wrongEmailOrPassword": "ชื่อผู้ใช้หรือรหัสผ่านผิด กรุณาลองอีกครั้งหรือ คลิกที่ลืมรหัสผ่านเพื่อรีเซ็ตรหัสผ่านของคุณ",
+        "yourEmailHasNotBeenVerified": "อีเมลของคุณยังไม่ได้รับการยืนยัน โปรด<a href='' data-toggle='modal' data-target='#resend-email'>คลิกที่นี่</a> เพื่อรับอีเมลยืนยันตัวตนอีกครั้ง",
+        "pleaseEnterEmail": "กรุณาป้อนอีเมล",
+        "emailIsARequiredField": "กรุณาป้อนอีเมล",
+        "passwordIsARequiredField": "กรุณาป้อนรหัสผ่าน",
+        "nameIsARequiredField": "กรุณาป้อนชื่อ",
+        "emailAddressAlreadyExists": "อีเมลนี้มีอยู่แล้ว กรุณาใช้อีเมล์อื่นหรือทำการรีเซ็ตรหัสผ่านของคุณ",
+        "notFoundUserByEmail": "ไม่พบข้อมูลสมาชิกจากอีเมลนี้",
+        "confirmPassword": "รหัสผ่านทั้งสองจะต้องเหมือนกัน"
+    },
+    "oke": "ตกลง",
+    "or": "หรือ",
+    "email": "อีเมล์",
+    "password": "รหัสผ่าน",
+    "confirmPassword": "ยืนยันรหัสผ่าน",
+    "name": "ชื่อ",
+    "resendEmailVerfyMessage": "กรุณาตรวจสอบอีเมลขอองคุณ และคลิกยืนยันตัวตน หากคุณไม่ได้รับอีเมล์ยืนยัน <a href='' data-toggle='modal' data-target='#resend-email'>กรุณาคลิกที่นี่</a> เพื่อส่งอีกครั้ง",
+    "sendInformation": "ส่งข้อมูล",
+    "titleResendEmailVerifyEmail": "กรุณากรออกอีเมลที่ใช้สมัครเพื่่อรับอีเมล์ยืนยัน",
+    "alreadyAMember": "เป็นสมาชิกอยู่แล้วใช่ไหม"
+}

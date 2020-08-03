@@ -1,0 +1,54 @@
+{
+	"login": {
+		"login": "Login",
+		"subTitle": "Sign in to get started. Buy - Sell online.",
+		"loginWithFacebook": "Login with Facebook",
+		"loginWithGmail": "Login with Gmail",
+		"loginWithEmail": "Login with email",
+		"becomeAMember": "Become a member"
+	},
+	"register": {
+		"becomeAMember": "Become a member",
+		"subTitle": "You can be a member In order to easily buy-sell Just a few steps",
+		"registerWithFacebook": "Register Facebook",
+		"registerWithGmail": "Register Gmail",
+		"registerWithEmail": "Register with email",
+                "termsOfUseAndPrivacyPolicy": "By registering, you agree to our <a href='#'>terms of use</a> and <a href='#'>privacy policy</a>.",
+                "yourAccountHasBeenVerified": "Your account has been verified. You can signin now",
+                "yourVerificationCodeHasExpired": "Your verification code has expired. Please, <a href='' data-toggle='modal' data-target='#resend-email'>request a new one</a>",
+                "thisRequestIsInvalid": "Sorry, this request is invalid. Please, <a href='' data-toggle='modal' data-target='#resend-email'>request a new verification email</a>"
+	},
+        "resetPassword": {
+                "resetPassword": "Reset password",
+                "resetPasswordTitle": "Please issue an email to sign up to reset your password.",
+                "changePassword": "Change password",
+                "messgeSendEmailSuccess": "We have reset the password to the email {{email}}",
+                "pleaseCheckYourEmail": "Please check your email.",
+                "yourResetPasswordCodeHasExpired": "Your reset password code has expired. Please, <a href='' data-toggle='modal' data-target='#reset-password'>request a new one</a>",
+                "thisRequestIsInvalid": "Sorry, this request is invalid. Please, <a href='' data-toggle='modal' data-target='#reset-password'>request the change of your password again</a>"
+        },
+        "error": {
+		"pleaseTryAgainLater": "An error has occurred, please try again later",
+                "domainNotAllowed": "Your are not allowed to login, please contact support@domnain.com",
+                "wrongEmailOrPassword": "Wrong user or password. Try again or click Forgot password to reset it",
+                "yourEmailHasNotBeenVerified": "Your email has not been verified <a href='' data-toggle='modal' data-target='#resend-email'>Please click here</a> to receive verification email",
+                "pleaseEnterEmail": "Please enter email",
+                "emailIsARequiredField": "Email is a required field",
+                "passwordIsARequiredField": "Password is a required field",
+                "nameIsARequiredField": "Name is a required field",
+                "emailAddressAlreadyExists": "This email already exists. Please, choose a different one or restore your password",
+                "notFoundUserByEmail": "Member information could not be found from this email.",
+                "confirmPassword": "Both password need to be the same"
+        },
+        "oke": "O.K.",
+	"or": "or",
+	"email": "Email",
+        "password": "Password",
+        "confirmPassword": "confirm password",
+	"name": "Name",
+	"alreadyAMember": "Already a member?",
+	"resendEmailVerfyMessage": "Please check your email. And click verify identity If you do not receive a confirmation email <a href='' data-toggle='modal' data-target='#resend-email'>Please click here</a> To resend",
+	"sendInformation": "Send information",
+	"titleResendEmailVerifyEmail": "Please issue an email to sign up to receive a confirmation email",
+	"pleaseTryAgainLater": "pleaseTryAgainLater"
+}

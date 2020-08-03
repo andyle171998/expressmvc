@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <title>SeuKhai</title>
+    <%- include('../layout/head') %>
+</head>
+
+<body class="home">
+    <section>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="container-form">
+                    <form class="form-signin" method="post" action="/v1.0/oauth/signup">
+                        <h1 class="title"><%= __('register.becomeAMember') %></h1>
+                        <div class="hr-3"></div>
+                        <p class="sub-title"><%= __('register.subTitle') %></p>
+                        <a href="/v1.0/oauth/facebook">
+                            <div class="box-social facebook">
+                                <img src="/assets/icon/facebook.svg" />
+                                <p class="text">
+                                    <%= __('register.registerWithFacebook') %>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/v1.0/oauth/google">
+                            <div class="box-social google">
+                                <img src="/assets/icon/mail.svg" />
+                                <p class="text">
+                                    <%= __('register.registerWithGmail') %>
+                                </p>
+                            </div>
+                        </a>
+                        <p class="text-content"><%= __('or') %></p>
+                        <% if(typeof success !== 'undefined' && success){ %>
+                        <div class="success-content">
+                            <div class="success-box">
+                                <img src="/assets/icon/check-circle.svg">
+                                <span><%= __('register.yourAccountHasBeenVerified') %></span>
+                            </div>
+                        </div>
+                        <% } %>
+                        <input type="text" name="name" class="form-control input-content"
+                            placeholder="<%= __('name') %>" autofocus
+                            value="<%= typeof name !== 'undefined' ? name : '' %>">
+                        <input type="text" name="email" class="form-control input-content"
+                            placeholder="<%= __('email') %>" autofocus
+                            value="<%= typeof email !== 'undefined' ? email : '' %>">
+                        <input type="password" name="password" class="form-control input-content"
+                            placeholder="<%= __('password') %>"
+                            value="<%= typeof password !== 'undefined' ? password : '' %>">
+                        <% if(typeof error !== 'undefined'){ %>
+                        <%- include('../layout/error.ejs', {
+                                    error: error
+                                }) %>
+                        <% } %>
+                        <button class="box-social gmail" type="submit">
+                            <img src="/assets/icon/mail.svg" />
+                            <p class="text">
+                                <%= __('register.registerWithEmail') %>
+                            </p>
+                        </button>
+
+                        <% if(typeof request_is_invalid !== 'undefined' && request_is_invalid){ %>
+                        <p class="send-email-verify error"><%- __('register.thisRequestIsInvalid')%></p>
+                        <% } %>
+                        <% if(typeof verify_code_expired !== 'undefined' && verify_code_expired){ %>
+                        <p class="send-email-verify error"><%- __('register.yourVerificationCodeHasExpired')%></p>
+                        <% } %>
+                        <p class="send-email-verify <%= typeof verify !== 'undefined' ? '' : 'hidden' %>">
+                            <%- __('resendEmailVerfyMessage') %></p>
+                        <p class="sub-text">
+                            <%- __('register.termsOfUseAndPrivacyPolicy') %>
+                        </p>
+                        <p class="question">
+                            <%= __('alreadyAMember') %>
+                        </p>
+                        <a class="btn-redirect-login">
+                            <div class="box-social register">
+                                <img src="/assets/icon/log-in.svg" />
+                                <p class="text">
+                                    <%= __('login.login') %>
+                                </p>
+                            </div>
+                        </a>
+                    </form>
+                </div>
+                <div class="modal fade" id="resend-email" tabindex="-1" role="dialog"
+                    aria-labelledby="resend-email-title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="resend-email-title"><%= __('titleResendEmailVerifyEmail') %>
+                                </h5>
+                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                    <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="modal-body container-form">
+                                <input type="text" name="email-resend" class="form-control input-content"
+                                    placeholder="<%= __('email') %>" autofocus id="email-resend"
+                                    value="<%= typeof email !== 'undefined' ? email : '' %>">
+                                <div class="error-resend-email">
+                                </div>
+                                <button class="box-social gmail btn-resend-email">
+                                    <img src="/assets/icon/mail.svg" />
+                                    <p class="text">
+                                        <%= __('sendInformation') %>
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+            $('#resend-email').on('hidden.bs.modal', function (e) {
+                $('.error-resend-email').html('')
+            })
+            $('.btn-redirect-login').on('click', function (e) {
+                e.preventDefault()
+                const redirect_uri = getParameterByName('redirect_uri');
+                const lang = getParameterByName('lang');
+                let url = '/v1.0/oauth/authorize';
+                if (redirect_uri) {
+                    url += `?redirect_uri=${redirect_uri}`;
+                    if (lang) {
+                        url += `&lang=${lang}`
+                    }
+                } else if (lang) {
+                    url += `?lang=${lang}`
+                }
+                window.location.href = url
+            })
+            $(".btn-resend-email").on("click", function () {
+                var email = $('#email-resend').val();
+                $.ajax({
+                    type: 'POST',
+                    url: '/v1.0/oauth/resend-email',
+                    data: {
+                        email
+                    },
+                    success: function (result) {
+                        if (result.success) {
+                            $('#resend-email').modal('hide')
+                            $('.send-email-verify.error').css('display', 'none')
+                            $('.send-email-verify.hidden').removeClass('hidden')
+                        }
+                    },
+                    error: function (error) {
+                        if (error.responseJSON.detail) {
+                            if (error.responseJSON.detail.message) {
+                                $('.error-resend-email').html(error.responseJSON.detail.message)
+                            } else {
+                                $('.error-resend-email').html(error.responseJSON.detail)
+                            }
+                        }
+                    }
+                });
+            })
+        </script>
+    </section>
+</body>
+<%- include('../layout/footer') %>
+
+</html>

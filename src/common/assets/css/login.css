@@ -1,0 +1,226 @@
+.container-form {
+    margin: auto;
+    float: none!important;
+    max-width: 340px;
+    text-align: center;
+}
+.container-form .title{
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0px;
+    color: #626262;
+    font-weight: bold;
+}
+.container-form .hr-3{
+    height: 3px;
+    width: 100%;
+    background: #14B400 0% 0% no-repeat padding-box;
+    margin: 15px 0;
+}
+.container-form .sub-title{
+    font-family: 'cloudregular';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #626262;
+    margin-bottom: 20px;
+}
+.container-form .box-social {
+    margin-bottom: 20px;
+    border-radius: 40px;
+    height: 40px;
+    padding: 9px 0 8px;
+    position: relative;
+    border: none;
+}
+.container-form .box-social img{
+    display: inline-block;
+    height: 15px!important;
+}
+.container-form .box-social .text{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    font-family: 'cloudregular';
+    margin: 0;
+    vertical-align: middle;
+}
+.container-form .box-social.facebook{
+    background: #3F69B9 0% 0% no-repeat padding-box;
+}
+.container-form .box-social.phone{
+    background: #008841 0% 0% no-repeat padding-box;
+}
+.container-form .box-social.google{
+    background: #CC4B4B 0% 0% no-repeat padding-box;
+}
+.container-form .box-social.gmail{
+    background: #462D74 0% 0% no-repeat padding-box;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+
+.container-form .text-content{
+    font-size: 18px;
+    line-height: 23px;
+    font-family: 'cloudregular';
+    color: #626262;
+    margin-bottom: 20px;
+}
+.container-form .input-content{
+    border: 1px solid #E5E5E5;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    height: 40px;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: 'cloudregular';
+}
+.container-form .question{
+    font-size: 18px;
+    line-height: 23px;
+    font-family: 'cloudregular';
+    color: #626262;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.container-form .box-social.register{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #14B400;
+    width: 100%;
+    margin-bottom: 0;
+}
+.container-form .box-social.register .text{
+    color: #14B400;
+}
+.container-form .box-social.reset-password{
+    background: #14B400;
+}
+.container-form .box-social.reset-password .text{
+    color: #fff;
+}
+.container-form  .success-content{
+    margin-bottom: 10px;
+    border-radius: 40px;
+    padding: 10px;
+    border: 1px solid #14B400;
+    width: 100%;
+}
+.container-form .success-content .success-box{
+    color: #14B400;
+    font-weight: 500;
+    font-size: 15px;
+}
+.container-form .success-content .success-box img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -1px;
+}
+.container-form .sub-text{
+    font-family: 'cloudregular';
+    font-size: 14px;
+    line-height: 18px;
+    color: #626262;
+    margin-top: 15px;
+}
+.container-form .sub-text a{
+    color: #14B400;
+}   
+.send-email-verify{
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: #626262;
+    font-size: 12px!important;
+    font-weight: 16;
+    font-family: 'cloudregular';
+}
+.send-email-verify.hidden{
+    display: none;
+}
+.send-email-verify a{
+    color: #14B400;
+}
+.send-email-verify.error a{
+    color: #DC3849;
+}
+#reset-password-success .modal-dialog,
+#reset-password .modal-dialog,
+#resend-email .modal-dialog{
+    width: 380px;
+    text-align: center;
+}
+#reset-password-success .modal-title,
+#reset-password .modal-title,
+#resend-email .modal-title{
+    color: #626262;
+    font-family: 'cloudregular';
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+}
+#reset-password-success .modal-header,
+#reset-password .modal-header,
+#resend-email .modal-header{
+    margin-top: 20px;
+    display: block;
+    border: none;
+}
+#reset-password-success .btn-close,
+#reset-password .btn-close,
+#resend-email .btn-close {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    font-size: 18px;
+}
+#reset-password-success .modal-body.container-form,
+#reset-password .modal-body.container-form,
+#resend-email .modal-body.container-form{
+    width: 100%;
+}
+#reset-password-success .error-resend-email,
+#reset-password .error-resend-email,
+#resend-email .error-resend-email{
+    font-family: 'cloudregular';
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #DC3849;
+}
+#reset-password-success .modal-footer,
+#reset-password .modal-footer,
+#resend-email .modal-footer{
+    text-align: center;
+    border: none;
+}
+#reset-password-success .modal-body button,
+#reset-password .modal-body button,
+#resend-email .modal-body button{
+    margin: 14px 0 25px;
+}
+
+button:focus {
+    outline: unset;
+}
+a {
+    cursor: pointer;
+}
+.box-reset-password{
+    margin-bottom: 10px;
+}
+.box-reset-password .reset-password{
+    letter-spacing: 0px;
+    color: #008841!important;
+    font-size: 12px!important;
+    font-weight: 16;
+    
+}
